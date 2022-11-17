@@ -1,0 +1,59 @@
+.button{
+	border: none;
+	border-radius: 4px;
+	transition: 0.15s;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.large {
+	padding: 12px 36px;
+	font-size: 24px;
+}
+
+.medium {
+	padding: 7px 18px;
+	font-size: 16px;
+}
+
+.blue {
+	background: rgba(0, 123, 255, 0.125);
+	color: rgba(0, 123, 255, 0.8);
+}
+
+.blue:hover {
+	background: rgba(0, 123, 255, 0.175);
+}
+
+.blue:active {
+	background: rgba(0, 123, 255, 0.25);
+}
+
+.purple {
+  background: rgba(85, 105, 255, 0.125);
+	color: rgb(85, 105, 255);
+}
+
+.purple:hover {
+  background: rgba(85, 105, 255, 0.175);
+}
+
+.purple:active {
+  background: rgba(85, 105, 255, 0.25);
+}
+
+.gray {
+	background: rgba(0, 0, 0, 0.075);
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.gray:hover {
+	background: rgba(0, 0, 0, 0.15);
+}
+
+.gray:focus {
+	background: rgba(0, 0, 0, 0.2);
+}

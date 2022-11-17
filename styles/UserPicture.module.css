@@ -1,0 +1,21 @@
+.pictureWrapper {
+	cursor: pointer;
+	animation: fadeIn 0.2s ease-in-out;
+	display: flex;
+	align-items: center;
+}
+
+.pictureWrapper img {
+	height: var(--size);
+	width: var(--size);
+	border-radius: 6px;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

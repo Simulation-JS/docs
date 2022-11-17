@@ -1,0 +1,68 @@
+.red{
+	stroke: var(--red);
+}
+.green{
+	stroke: var(--green);
+}
+.purple{
+	stroke: var(--purple);
+}
+.yellow{
+	stroke: var(--yellow);
+}
+.blue {
+	stroke: var(--blue);
+}
+.svg{
+	transition: 0.5s;
+	animation: rotate 1.4s linear infinite;
+}
+.circle{
+	fill: none;
+	stroke-width: 4px;
+	stroke-dasharray: 118;
+	transition: 0.5s;
+	transform-origin: center;
+}
+.medium {
+	animation: circleAnimationMedium 1.4s ease-in-out infinite;
+}
+.small {
+	animation: circleAnimationSmall 1.4s ease-in-out infinite;
+}
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes circleAnimationMedium{
+	0%{
+		stroke-dashoffset: 118;
+		transform: rotate(0deg);
+	}
+	50%{
+		stroke-dashoffset: 25;
+		transform: rotate(79deg);
+	}
+	100%{
+		stroke-dashoffset: 118;
+		transform: rotate(359deg);
+	}
+}
+@keyframes circleAnimationSmall{
+	0%{
+		stroke-dashoffset: 118;
+		transform: rotate(0deg);
+	}
+	50%{
+		stroke-dashoffset: 80;
+		transform: rotate(79deg);
+	}
+	100%{
+		stroke-dashoffset: 118;
+		transform: rotate(359deg);
+	}
+}

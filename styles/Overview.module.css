@@ -1,0 +1,90 @@
+.overview {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: transparent;
+	--animaitonTime: 0.15s;
+	--filter: blur(2px);
+	transition: var(--animaitonTime);
+	backdrop-filter: var(--filter);
+	-webkit-backdrop-filter: var(--filter);
+	animation: fadeIn var(--animaitonTime) linear;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.closing {
+	backdrop-filter: blur(0px);
+	-webkit-backdrop-filter: blur(0px);
+	animation: fadeOut var(--animaitonTime) linear;
+}
+
+.card {
+	padding: 0px;
+	--border-radius: 8px;
+	border-radius: var(--border-radius);
+	background: white;
+	width: fit-content;
+	height: fit-content;
+	box-shadow: rgb(159 162 191 / 18%) 0px 9px 16px, rgb(159 162 191 / 32%) 0px 2px 2px;
+	overflow: hidden;
+	animation: expand 0.25s ease-in-out;
+	transform: scale(1);
+	transform-origin: top left;
+}
+
+.retract {
+	animation: retract 0.25s ease-in-out;
+	transform: scale(0.5);
+}
+
+@keyframes retract {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.5);
+	}
+}
+
+@keyframes expand {
+	from {
+		transform: scale(0.5);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		backdrop-filter: var(--filter);
+		-webkit-backdrop-filter: var(--filter);
+		opacity: 1;
+	}
+	to {
+		backdrop-filter: blur(0px);
+		-webkit-backdrop-filter: blur(0px);
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		backdrop-filter: blur(0px);
+		-webkit-backdrop-filter: blur(0px);
+		opacity: 0;
+	}
+	to {
+		backdrop-filter: var(--filter);
+		-webkit-backdrop-filter: var(--filter);
+		opacity: 1;
+	}
+}

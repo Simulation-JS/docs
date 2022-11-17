@@ -1,0 +1,54 @@
+.pathInput {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+}
+
+.pathInput span {
+	font-size: 20px;
+	font-weight: 300;
+	transform: translateY(-2px);
+}
+
+.docInput {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	align-items: flex-start;
+	border-left: 2px solid var(--light);
+	padding: 10px 0 15px 10px;
+	padding-left: 15px;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.mut {
+	border-left-color: var(--light);
+}
+
+.imut {
+	border-left-color: var(--green);
+}
+
+.imut::before {
+	background-color: var(--green) !important;
+}
+
+.docInput::before {
+	--length: 15px;
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: -2px;
+	width: var(--length);
+	height: 2px;
+	background: var(--light);
+	z-index: 10;
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}

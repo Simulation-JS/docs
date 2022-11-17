@@ -1,0 +1,30 @@
+.box {
+	border: 1px solid var(--light);
+	border-radius: 8px;
+	background: white;
+	padding: 15px;
+	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.125);
+	height: fit-content;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 12px;
+	max-width: 375px;
+	transition: 0.15s;
+}
+
+.box:hover {
+	/* background: rgba(250, 250, 250); */
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px);
+}
+
+.box h1 {
+	font-weight: 300;
+	font-size: 1.75rem;
+}
+
+.box span {
+	color: rgba(0, 0, 0, 0.55);
+}

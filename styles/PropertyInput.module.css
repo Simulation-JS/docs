@@ -1,0 +1,26 @@
+.wrapper {
+	padding: 10px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	position: relative;
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+	gap: 6px;
+}
+
+.wrapper::before {
+	--width: 2px;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--width);
+	height: 100%;
+	border-radius: 10px;
+	background: #ccc;
+}

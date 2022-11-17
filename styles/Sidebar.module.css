@@ -1,0 +1,27 @@
+.sidebar {
+	--width: 290px;
+	height: 100vh;
+	width: var(--width);
+	min-width: var(--width);
+	background: var(--dark);
+	position: relative;
+}
+
+.sidebar * {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.sidebar hr {
+	margin: 25px 18px;
+	background: rgba(255, 255, 255, 0.1);
+	height: 1px;
+	border: none;
+}
+
+.title {
+	font-weight: 300;
+}
+
+.titleItem {
+	border-bottom: 1px solid var(--light);
+}

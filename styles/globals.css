@@ -1,0 +1,32 @@
+:root {
+  --primary: #007bff;
+  --dark: rgb(35, 48, 68);
+  --light: rgb(220, 220, 220);
+	--red: #f44336;
+  --light-red: rgb(253, 237, 237);
+	--green: #2ecc71;
+	--purple: #ce93d8;
+  --yellow: #ffd700;
+  --blue: #007bff;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
