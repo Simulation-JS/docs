@@ -2,4 +2,4 @@ A documentation website for [simulation.js](https://github.com/JacksonO123/simul
 
 [Demo Site](https://simulationjs-demo.vercel.app/)
 
-[simulationjs-docs](https://simulationjs-docs.vercel.app/)
+[simulationjs-docs](https://simulationjs.vercel.app/)
