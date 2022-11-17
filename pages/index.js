@@ -50,10 +50,11 @@ export default function Home() {
               simulations.
             </section>
             <article className={styles.contentSection}>
-              <section>
-                To use simulation.js in your site, include the simulation.js file into the body tag, or the
-                head tag with the defer prop of your html file like this.
-              </section>
+              <section>To add simulationjs to your site with npm:</section>
+              <Code language="bash">{'npm i simulationjs'}</Code>
+            </article>
+            <article className={styles.contentSection}>
+              <section>You can also include the simulation.js file into the body tag.</section>
               <Code language="html">
                 {`<head>
     <script src="simulation.js" defer></script>
@@ -70,7 +71,7 @@ export default function Home() {
               </span>
             </article>
             <section>
-              Check the Simulation tab on the right to find more information on creating a Simulation canvas
+              Check the Simulation tab on the left to find more information on creating a Simulation canvas
             </section>
           </div>
         </main>
