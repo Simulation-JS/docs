@@ -63,7 +63,7 @@ export default function Home() {
                 The Simulation.js source code can be found at the GitHub link{' '}
                 <a
                   className={styles.link}
-                  href="https://github.com/JacksonO123/simulationjs"
+                  href="https://github.com/Simulation-JS/Simulation-JS"
                 >
                   Simulation.js
                 </a>
