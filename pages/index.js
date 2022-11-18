@@ -56,9 +56,9 @@ export default function Home() {
             <article className={styles.contentSection}>
               <section>You can also include the simulation.js file into the body tag.</section>
               <Code language="html">
-                {`<head>
-    <script src="simulation.js" defer></script>
-</head>`}
+                {`<body>
+    <script src="simulation.js"></script>
+</body>`}
               </Code>
               <span>
                 The Simulation.js source code can be found at the GitHub link{' '}
