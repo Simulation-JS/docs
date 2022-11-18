@@ -100,8 +100,18 @@ export default function Sidebar({ admin = false, forceActive = null }) {
     }
   };
 
+  const sortTabs = (tabs) => {
+    return tabs.sort((a, b) => {
+      if (a.isPath) return 1;
+      if (!a.isPath && !b.isPath) return a.show.localeCompare(b.show);
+      return -1;
+    });
+  };
+
   const fetchTabs = async () => {
-    const tabs = await getTabs();
+    let tabs = await getTabs();
+    tabs = sortTabs(tabs);
+    console.log(tabs);
     setPaths([...startPaths, ...tabs]);
     checkAddAdmin();
   };
