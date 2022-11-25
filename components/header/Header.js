@@ -1,5 +1,5 @@
 import styles from '../../styles/Header.module.css';
-import Search from './Search';
+import homeStyles from '../../styles/Home.module.css';
 import Button from '../Button';
 import { signIn, signOut } from '../../tools/firebase';
 import UserPicture from '../UserPicture';
@@ -32,7 +32,6 @@ export default function Header({ user, userLoading, admin = false }) {
   return (
     <>
       <header className={styles.header}>
-        <Search placeholder="Search (not working yet)" />
         {user ? (
           <UserPicture
             user={user}
