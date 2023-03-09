@@ -155,14 +155,15 @@ export const renameDoc = async (prevName, newName, parentName) => {
 };
 
 export const getTabInfoFromPath = async (path) => {
-  console.log(path);
   const tabs = await getTabs();
+  console.log(path, tabs);
   for (let i = 0; i < tabs.length; i++) {
     if (tabs[i].isPath) {
       if (tabs[i].path === `/${path}`) return tabs[i].show;
     } else {
       for (let j = 0; j < tabs[i].paths.length; j++) {
         const p = tabs[i].paths[j];
+        console.log(p);
         if (p.path === `/${path}`) return p.show;
       }
     }

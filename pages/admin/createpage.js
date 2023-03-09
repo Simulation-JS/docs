@@ -19,7 +19,7 @@ import DocProperties from '../../components/DocProperties';
 export default function Home() {
   const router = useRouter();
   const auth = getAuthObject();
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const [admin, setAdmin] = useState(false);
   const [name, setName] = useState('');
   const [properties, setProperties] = useState([]);
