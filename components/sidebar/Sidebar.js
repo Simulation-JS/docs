@@ -22,7 +22,7 @@ const SidebarContent = ({ content, admin, fetchTabs, parent, forceActive = null 
   };
 
   const handleRemoveTab = async (tab) => {
-    if (tab.isPath) {
+    if (!tab.isPath) {
       await deleteObjectDoc(tab.show, tab.path);
       fetchTabs();
     } else {
