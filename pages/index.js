@@ -47,7 +47,8 @@ export default function Home() {
             <h1 className={styles.pageTitle}>Getting Started</h1>
             <section>
               Simulation.js is a simple graphics library for making interacting with shapes and animations
-              simple and quick.
+              simple and quick. At times this library is improved and changed fast, as a result Documentation
+              may be out of date.
             </section>
             <article className={styles.contentSection}>
               <section>To add simulationjs to your site with npm:</section>
